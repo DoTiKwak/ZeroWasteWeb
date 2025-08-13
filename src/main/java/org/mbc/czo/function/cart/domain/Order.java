@@ -1,4 +1,5 @@
 package org.mbc.czo.function.cart.domain;
+/*
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -60,3 +61,4 @@ public class Order extends BaseEntity {
         return totalPrice;
     }
 }
+*/

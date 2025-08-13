@@ -1,4 +1,5 @@
 package org.mbc.czo.function.cart.repository;
+/*
 import org.mbc.czo.function.cart.domain.Cart;
 import org.mbc.czo.function.cart.domain.CartItem;
 import org.mbc.czo.function.cart.dto.CartDetailDTO;
@@ -16,3 +17,4 @@ public interface CartItemRepository extends JpaRepository<CartItem, Long> {
     List<CartDetailDTO> findCartDetailsByCartId(Long cartId);
 
 }
+*/

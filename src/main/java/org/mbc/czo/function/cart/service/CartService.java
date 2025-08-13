@@ -22,7 +22,7 @@ import java.util.List;
 @Transactional
 public class CartService {
 
-    private final ItemRepository itemRepository;
+    /*private final ItemRepository itemRepository;
     private final MemberRepository memberRepository;
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
@@ -112,5 +112,5 @@ public class CartService {
         }
         return orderId;
     }
-
+*/
 }
