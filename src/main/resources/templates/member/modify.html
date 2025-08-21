@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>비밀번호 수정</title>
+</head>
+<body>
+    <!-- 추후 서 #authentication.principal로 바꾸는거 생각 -->
+    <div class="card-body">
+        <form id="registerForm" action="/member/resetPW" method="post">
+            <div class="input-group mb-3">
+                <span class="input-group-text">ID</span>
+                <input type="text" class="form-control" name="mid" th:value="${memberModifyDTO.mid}" readonly>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">PW</span>
+                <input type="password" class="form-control" name="mpassword" placeholder="비밀번호">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">PWCHECK</span>
+                <input type="password" class="form-control" name="mpasswordcheck" placeholder="비밀번호 확인">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">NAME</span>
+                <input type="text" class="form-control" name="mname" th:value="${memberModifyDTO.mname}">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">PHONENUMBER</span>
+                <input type="text" class="form-control" name="mphoneNumber" th:value="${memberModifyDTO.mphoneNumber}">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">EMAIL</span>
+                <input type="text" class="form-control" name="memail" th:value="${memberModifyDTO.memail}">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">ADDRESS</span>
+                <input type="text" class="form-control" name="maddress" th:value="${memberModifyDTO.maddress}">
+            </div>
+
+            <div class="my-4">
+                <div class="float-end">
+                    <button type="submit" class="btn btn-primary submitBtn">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div><!--end card body-->
+
+</body>
+</html>
